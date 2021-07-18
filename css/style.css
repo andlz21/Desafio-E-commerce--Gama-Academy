@@ -1,0 +1,390 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+  margin-top: -10px;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  margin-left: -8px;
+  position: relative;
+  margin-right: 0;
+}
+
+body {
+  margin-right: 0;
+}
+
+
+
+/* -- top items/ section-1  */ 
+
+
+.blackfriday-top {
+  width: 15%;
+  height: 15%;
+  float: left;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+
+.top-nav {
+  text-decoration: none;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 26px;
+  padding-top: 17px;
+  font-size: 20px;
+  color: #fff;
+  align-items: center;
+  margin-right: 0;
+}
+
+.top-nav:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  transition-duration: 0.5s;
+  
+}
+
+.bf-cover1 {
+  width: 100%;
+  height: 100%;
+}
+
+
+.section1 {
+  background-size: cover;
+  background-image: url(../assets/blackfriday-cover.jpg);
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-right: 0;
+}
+
+
+.section-container {
+  height:100%;
+  width:100%;
+  margin-right: 0px;
+}
+
+#boxform {
+  display: flex;
+}
+
+#form {
+  display: grid;
+  width: 19%;
+  height: 150px;
+  margin-right: 0px;
+  float: right;
+  margin-left: 65px;
+  margin-top: -40px;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.intro-text {
+  display: block;
+  font-size: 29px;
+  justify-content: center;
+  margin-top: -40px;
+  margin-left: 150px;
+  margin-right: 50px;;
+  padding-bottom: 10px;
+  margin-bottom: auto;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  color: white;
+}
+
+#submit {
+  border-radius: 5px;
+  font-size: 20px;
+  height: 75%;
+  background-color:#6b6b6b;
+  color: white;
+  text-shadow: 1px 1px  black;
+  cursor:pointer;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+
+#submit:hover {
+  color: white;
+  background-color:  rgba(192,0,0,255);
+  transition-duration: 0.3s;
+}
+
+/* section-2 */
+
+
+
+.section2 {
+  background-image: url(/assets/black-friday-sale.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.item {
+	margin: 10px;
+  border-radius: 4px;
+  height: 330px;
+  position: relative;
+}
+
+.item-2, .item-3 {
+	grid-row: span 1;
+}
+
+.grid-start {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 340px);
+	height: 500px;
+  max-width: 620px;
+	margin: 0 auto;
+  justify-content:space-between;
+  padding-top: 150px;
+  padding-bottom: 20%;
+  margin-top: -10px;
+  position: relative;
+}
+
+/* image grid  */
+
+#photo1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit:fill;
+  cursor: pointer;
+}
+
+.item.item-1 .text-photo1 {
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    background: #13120e;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    font-size: 20px;
+    margin-bottom: 0;
+    height: 16%;
+    padding-top: 5px;
+}
+
+.item.item-1:hover .text-photo1 {
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.text-photo1 {
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+
+/* grid 2 */
+
+.text-photo2 {
+    font-size: 1.0em;
+    margin-top: 0.25em;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+#photo2 {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  max-width: 290px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item.item-2 .text-photo2 {
+  opacity: 0;
+  position: absolute;
+  bottom: -22px;
+  left: 0px;
+  right: 0px;
+  color: #e5e5e5;
+  background: #13120e;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  font-size: 20px;
+  height: 10%;
+  width: 100%;
+  padding-top: 7px;
+}
+
+.item.item-2:hover .text-photo2 {
+  opacity: 0.8;
+}
+
+
+/* grid 3 */
+
+.text-photo3  {
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  font-weight: bold;
+  font-style: oblique;
+
+}
+
+
+#photo3 {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item.item-3 .text-photo3 {
+  opacity: 0;
+  position: absolute;
+  bottom: -22px;
+  left: 0px;
+  right: 0px;
+  color: white;
+  background: #13120e;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  font-size: 20px;
+  height: 10%;
+  width: 100%;
+  padding-top: 7px;
+}
+
+.item.item-3:hover .text-photo3 {
+  opacity: 0.8;
+}
+
+/* grid 4 */
+
+
+.text-photo4  {
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  font-weight: bold;
+  font-style: oblique;
+  
+}
+
+#photo4 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.item.item-4 .text-photo4 {
+  opacity: 0;
+  position: absolute;
+  bottom: -22px;
+  left: 0px;
+  right: 0px;
+  color: white;
+  background: #13120e;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  font-size: 20px;
+  height: 10%;
+  width: 100%;
+  padding-top: 7px;
+}
+
+.item.item-4:hover .text-photo4 {
+  opacity: 0.8;
+}
+
+
+
+
+/* footer */
+
+.footer {
+  height: 250px;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.footer-infos {
+  background-color: #13120e;
+  margin-top: -25px;
+  height: auto;
+  color: white;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 140px;
+  font-size: 18px;
+  margin-left: -25px;
+  margin-right: 0;
+}
+
+.e-mailcontato {
+  text-decoration: none;
+  color: hsla(0, 0%, 45%, 0.966);
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.bf-logo-bottom {
+  background-color: #13120e;
+}
+
+.contact-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: -100px;
+  padding-top: 5px;
+}
+
+.bottom-logo {
+  width: 3%;
+  height: 3%;
+  margin: 12px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
